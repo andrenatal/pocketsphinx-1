@@ -9,6 +9,7 @@ install:
   - cd sphinxbase
   - ./autogen.sh
   - ./configure && make && sudo make install
+  - cd ..
   - pwd
   - ./autogen.sh
   - ./configure
