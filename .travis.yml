@@ -1,0 +1,20 @@
+sudo: true
+
+language: c
+
+install: 
+  - sudo apt-get install swig
+  - cd ..
+  - git clone https://github.com/mozilla/sphinxbase
+  - cd sphinxbase
+  - ./autogen.sh
+  - ./configure && make && sudo make install
+  - cd ../pocketsphinx
+  - ./autogen.sh
+  - ./configure
+  - make
+  - sudo make install
+  - cd swig
+  - make 
+  - cd java
+  - make
