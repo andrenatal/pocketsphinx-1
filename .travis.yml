@@ -9,9 +9,7 @@ install:
   - cd sphinxbase
   - ./autogen.sh
   - ./configure && make && sudo make install
-  - cd ..
-  - ls
-  - pwd
+  - cd ../pocketsphinx-1
   - ./autogen.sh
   - ./configure
   - make
